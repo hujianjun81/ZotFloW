@@ -1,0 +1,29 @@
+name: zotflow
+version: 2.0.0
+workflows:
+  library:
+    entry: references/library.md
+  close-reading:
+    entry: references/close-reading.md
+  resource-search:
+    entry: references/workflows/resource-search.md
+    context: references/research-context.md
+  research-review:
+    entry: references/workflows/research-review.md
+    context: references/research-context.md
+  paper-comparison:
+    entry: references/workflows/paper-comparison.md
+    context_when_personalized: references/research-context.md
+  experiment-review:
+    entry: references/workflows/experiment-review.md
+    context: references/research-context.md
+  figures:
+    entry: references/figures.md
+  note-quality:
+    entry: references/note-quality.md
+scripts:
+  library: scripts/query_zotero.py
+  source: scripts/read_mineru.py
+  annotations_and_questions: scripts/read_zotero_context.py
+  reading_note_lint: scripts/lint_note.py
+  figure_audit: scripts/audit_figures.py

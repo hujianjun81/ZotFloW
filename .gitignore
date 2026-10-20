@@ -1,0 +1,22 @@
+# Local runtime and generated artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.build/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Local configuration, credentials, and research data
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+/private/
+/local-data/
+/llm-for-zotero-mineru/
+/storage/
